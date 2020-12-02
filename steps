@@ -1,0 +1,36 @@
+step one  download install cheakra1n
+
+echo "deb https://assets.checkra.in/debian /" | sudo tee -a /etc/apt/sources.list
+    
+sudo apt-key adv --fetch-keys https://assets.checkra.in/debian/archive.key
+    
+sudo apt update
+    
+sudo apt-get install checkra1n
+
+
+
+step two download usb addons
+
+sudo apt-get update
+sudo apt-get install libusbmuxd-tools
+
+
+
+
+step three icloud bypass commands
+
+open a terminal tab and paste:
+     iproxy 2022 44
+    NEW TERMINAL TAB NOW
+    ssh root@localhost -p 2022
+    pass: alpine
+    mount -o rw,union,update /
+    echo "" >> /.mount_rw
+    mv /Applications/Setup.app/Setup /Applications/Setup.app/Setup.bak
+    uicache -a
+    killall backboardd
+    DONE
+
+
+
